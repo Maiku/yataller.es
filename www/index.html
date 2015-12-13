@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCKhJXtQzdrpfWJzQ7usz215xUWZH4AGKM"></script>
+    <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
+  </head>
+
+  <body ng-app="starter" ng-controller="home">
+
+    <ion-header-bar class="bar-dark" >
+
+  <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="Buscar...">
+    
+  </label>
+
+      <h1 class="title">YaTaller</h1>
+        <button class="button button-icon ion-person"></button>
+    </ion-header-bar>
+    <ion-content>
+      <div id="map" data-tap-disabled="true"></div>
+    </ion-content>
+    <ion-footer-bar class="bar-dark">
+      <a ng-click="centerOnMe()" class="button button-icon icon ion-navigate">Encuentrame!</a>
+    </ion-footer-bar>
+  <div class="infobox-wrapper">
+<div id="infobox" class="card ventana-taller">
+          <div class="title-card">
+            <h4>Taller 2 S.L.</h4>
+            <h6>Calle Roca 4 - 46007 | 96 380 20 12 | <span class="como-llegar">Como llegar</span></h6> 
+          </div>
+          <div class="item item-text-wrap">
+          <div class="row">
+            <div class="col-90">
+                En taller 2 nos dedicamos al automovil desde 1988 y blablabla blabla bla
+            </div>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col-50">
+              <span class="item item-icon-left">
+                <i class="icon ion-waterdrop"></i>
+                Cambio de aceite 
+                <span class="badge badge-light">35€</span>
+              </span>
+            </div>
+            <div class="col-50">
+               <span class="item item-icon-left">
+                <i class="icon ion-disc"></i>
+                    Cambio de neumaticos
+                    <span class="badge badge-light">75€</span>
+              </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-50">
+              <span class="item item-icon-left">
+                <i class="icon ion-ios-infinite"></i>
+                    Alineación 
+                <span class="badge badge-light">50€</span>
+              </span>
+            </div>
+            <div class="col-50">
+               <span class="item item-icon-left">
+                <i class="icon ion-paintbrush"></i>
+                    Cambio Tubo de Escape
+                <span class="badge badge-light">100€</span>
+              </span>
+            </div>
+          </div>
+
+      </div>
+
+</div>
+</body>
+</html>
+  </body>
+</html>
